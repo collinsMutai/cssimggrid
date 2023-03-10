@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 880px;
+  margin: 100px auto;
+}
+.container {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: 150px;
+  grid-template-areas: "a b c d e" "f f f g h";
+}
+.div-one {
+  grid-area: a;
+}
+.div-two {
+  grid-area: b;
+}
+.div-three {
+  grid-area: c;
+}
+.div-four {
+  grid-area: d;
+}
+.div-five {
+  grid-area: f;
+}
+.div-six {
+  grid-area: g;
+}
